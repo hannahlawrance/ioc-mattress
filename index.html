@@ -8,8 +8,14 @@
   </head>
   <!-- ADD CSS LINKS HERE - EXTERNAL LINKS FIRST THEN OWN CODE -->
   <!-- I.E. GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+
   <!-- I.E. GRIDLEX -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+  <!-- CDN JS FONT AWESOME LINK -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
   <!-- I.E. OWN CSS I.E. OWN STYLING THAT WILL OVERRIDE ANY STYLING ABOVE BECAUSE CODES READS TOP TO BOTTOM -->
   <link href="main.css" type="text/css" rel="stylesheet"/>
 
@@ -17,7 +23,7 @@
 
     <!-- --- --- --- HEADER --- --- --->
 
-  <header>
+  <header class="grid-middle-center"> <!-- taken from Gridlex -->
     <div>
       <h1><span>sleep</span> like a baby</h1>
       <h2>the ultimate mattress solution</h2>
@@ -26,19 +32,19 @@
 
 <!--- --- --- SECTION ONE --- --- --->
 <!-- photos and text -->
-  <section class="grid">
+  <section class="grid padding-none"> <!--padding-none = modula class specifics -->
     <div class="col-6_xs-12 bg-pug"> <!-- pug box -->
     </div>
 
-    <div class="col-6_xs-12"> <!-- lifetime text -->
-      <h3>built to last a lifetime</h3>
+    <div class="col-6_xs-12 textbox"> <!-- lifetime text -->
+      <h3 class="left">built to last a <span>lifetime</span></h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </section>
 
-  <section class="grid">
-    <div class="col-6_xs-12"> <!-- melt text -->
-      <h3> so soft you'll melt </h3>
+  <section class="grid padding-none">
+    <div class="col-6_xs-12 textbox"> <!-- melt text -->
+      <h3 class="left"> so <span>soft</span> you'll melt </h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
@@ -48,39 +54,44 @@
   </section>
 
 <!--- --- --- SECTION TWO --- --- --->
-<!-- features you will love --> <!--- make more divs inside grid div--->
-  <section class="bg-dark">
+<!-- FEATURES you will love --> <!--- make more divs inside grid div--->
+  <section class="bg-dark white-text">
     <div>
       <h3><span>features</span> you will love</h3>
     </div>
     <div class="grid">
-      <div class="grid col-3_xs-12">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="grid col-3_xs-12 padding-10">
+          <div class="center">
+            <i class="fas fa-cloud fa-5x"></i>
+          </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
 
-      <div class="grid col-3_xs-12">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="grid col-3_xs-12 padding-10">
+        <div class="center">
+          <i class="fas fa-cloud fa-5x"></i>
+          </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
 
-      <div class="grid col-3_xs-12">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="grid col-3_xs-12 padding-10">
+        <i class="fas fa-cloud fa-5x"></i>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
 
-      <div class="grid col-3_xs-12"
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="grid col-3_xs-12 padding-10">
+        <i class="fas fa-cloud fa-5x"></i>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
-
 
   </section>
 
 <!--- --- --- SECTION THREE --- --- --->
 <!---YELLOW PENCIL PHOTO--->
-  <section class="bg-pencils">
+  <section class="bg-pencils grid-middle-center">
     <div>
       <h4>never underestimate the power of</h4>
-    </div>
-    <div>
       <h2>a good night <span>sleep</span></h2>
     </div>
 
@@ -94,9 +105,9 @@
     </div>
 
     <div class="col-10_sx-12">
-      <h4>I've never experienced sleep like this. Omg I really love this mattress I want to buy one for every member of my family and one for my dog too.</h4>
+      <h5>I've never experienced sleep like this. Omg I really love this mattress I want to buy one for every member of my family and one for my dog too.</h5>
         <p class="credit">
-          A very happy customer
+          - A very happy customer
         </p>
     </div>
     <div class="col-1_sx-12">
@@ -109,7 +120,7 @@
 <!--- --- --- FOOTER --- --- --->
   <footer class="grid bg-dark">
     <div class="col-6_xs-12">
-      <h2>let's <span>connect</span></h2
+      <h2 class="left">let's <span>connect</span></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 

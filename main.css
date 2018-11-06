@@ -2,10 +2,133 @@
 *{
   margin:0;
   padding:0;
-  box-sizing:0;
+  box-sizing:border-box;
   border:1px solid rgb(200,200,200)
 }
-/* --- WEBSITE CSS ---*/
+/* --- UNIVERSAL STYLE CSS ---*/
 header, footer, section {
   padding: 5%;
+}
+body /*body stuff to be inserted here*/ {
+font-family: 'Montserrat', sans-serif;
+color: #222; /*get in the habit of doing this*/
+}
+/*Typography*/
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+h4 {
+  font-size: 1rem;
+  font-weight:normal;
+  text-align: center;
+}
+h5 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-align: left;
+}
+p {
+  font-size: 0.7rem;
+  font-weight: normal;
+  text-align: left;
+  padding: 2%;
+}
+span {
+  color: orange;
+}
+/* module classes is when you want to do a very specific function i.e. limited amount of padding */
+
+
+.padding-none {
+  padding: 0;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.padding-10 { /*focus padding class*/
+  padding:10%;
+}
+/*always put in module class to give direction*/
+/*---------------- HEADER -----------------------*/
+/* the whole CSS is in header */
+header {
+  background-image: url("images/leaves.jpg"); /*use this to add an image to the background */
+  background-size: cover; /*cover would be to make it fill the space while being as small as possible */
+  color: white;
+  /*put white in header and not h1 because we are only doing it once*/
+  min-height: 90vh;
+  /* VH = vertical height. 100% is full screen.*/
+  /* for centre in middle get html from gridlex and put in html*/
+}
+  .bg-pug { /*this is indented to reflect the class*/
+    background-image: url("images/pug.jpg");
+    background-size: cover;
+    background-position: 50% 35%;
+    min-height: 25vh;
+}
+.bg-bed { /*this is indented to reflect the class*/
+  background-image: url("images/bed.jpg");
+  background-size: cover;
+  background-position: 50% 17%;
+  min-height: 25vh;
+}
+.textbox {
+  padding: 5%; /*no space between 3 sections */
+}
+.bg-dark {
+  background-color:#1A2B36;
+  min-height: 50%;
+  color: white;
+  text-align: left;
+  padding: 10%;
+}
+.bg-pencils { /*this is indented to reflect the class*/
+  background-image: url("images/pencils.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh; /*VH for min height*/
+}
+.bg-pencils h4 { /*targeting the h4 within the div within the class of the section */
+  font-size: 1.5rem;
+}
+.bg-pencils h2 { /*targeting the h2 within the div within the class of the section */
+  font-size: 3rem;
+}
+.bg-pencils span { /*making the sleep white*/
+  color:white;
+}
+.credit {
+  text-align: right;
+  color: grey;
+}
+footer span { /*footer span means super target */
+  display: block; /*a display block element will always take up its own line */
+}
+input, textarea { /* comma reflects 2 different variables */
+width: 100%; /*100% means fills whole side*/
+font-family: 'Montserrat', sans-serif; /*needs to reset font in form */
+padding: 2%; /*padding is always in a percentage*/
+border-radius: 3px; /*border radius in PX*/
+margin-bottom: 2%; /*margin in percentage*/
+}
+
+.button { /*because class is already specified as "button"*/
+  background-color: orange;
 }
