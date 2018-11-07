@@ -8,6 +8,7 @@
 /* --- UNIVERSAL STYLE CSS ---*/
 header, footer, section {
   padding: 5%;
+
 }
 body /*body stuff to be inserted here*/ {
 font-family: 'Montserrat', sans-serif;
@@ -39,7 +40,7 @@ h5 {
   text-align: left;
 }
 p {
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: normal;
   text-align: left;
   padding: 2%;
@@ -70,6 +71,7 @@ span {
 /* the whole CSS is in header */
 header {
   background-image: url("images/leaves.jpg"); /*use this to add an image to the background */
+  background-color:#1A2B36;
   background-size: cover; /*cover would be to make it fill the space while being as small as possible */
   color: white;
   /*put white in header and not h1 because we are only doing it once*/
@@ -156,9 +158,18 @@ margin-bottom: 2%; /*margin in percentage*/
 @media screen and (max-width: 600px) {
 .column {
   width: 100%;
+  }
+
 }
-}
+
 @media all and (max-width: 576px) { /*go to gridlex to match up html md/xs etc with gridlex pixels*/ /*all means all media forms*/
   .mobile-flip {
   flex-direction: column-reverse} /*flex box*/
+  .bg-pencils {
+    background-color: orange; /* go back and fix this */
+    background-image: none;
+  }
+}
+@media (max-width: 576px) {
+
 }
