@@ -6,6 +6,10 @@
   /* border:1px solid rgb(200,200,200) */
   /*don't forget to comment out border once site is live*/
 }
+
+[class*=grid-], [class*=grid_], [class~=grid] {
+  margin:0;
+}
 /* --- UNIVERSAL STYLE CSS ---*/
 header, footer, section {
   padding: 5%;
